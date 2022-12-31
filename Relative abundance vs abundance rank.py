@@ -21,7 +21,7 @@ shannon_index = -sum([pi*np.log2(pi) for pi in p])
 plots = plt.plot(range(1, len(species)+1), p, "o-", label=[f"{species[i]} ({counts[i]})" for i in range(len(species))])
 plt.xlabel("Abundance rank")
 plt.ylabel("Relative abundance")
-plt.title("Birds' Biodiversity of IISER-Kolkata Campus")
+plt.title("Birds' Biodiversity")
 plt.xticks()
 
 
