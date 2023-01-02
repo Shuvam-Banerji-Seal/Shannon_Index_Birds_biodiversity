@@ -10,11 +10,10 @@ with open('birds_counts.txt', 'r') as f:
 
 # Calculate the Shannon index
 n = sum(data.values())
-shannon_index = 0
-for count in data.values():
-    p = count / n
-    shannon_index -= p * log(p, 2)
+p = [count/n for count in data.values()]
+shannon_index = -sum([pi*math.log(pi) for pi in p])
 
+        
 # Plot the abundance rank graph
 sorted_data = sorted(data.items(), key=lambda x: x[1], reverse=True)
 species, counts = zip(*sorted_data)
