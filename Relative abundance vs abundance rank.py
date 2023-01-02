@@ -11,11 +11,12 @@ with open("birds_counts.txt", "r") as f:
         items = line.split()
         species.append(items[0])
         counts.append(int(items[1]))
-
+        
+        
 # Calculate the Shannon index
 n = sum(counts)
 p = [count/n for count in counts]
-shannon_index = -sum([pi*np.log2(pi) for pi in p])
+shannon_index = -sum([pi*math.log(pi) for pi in p])
 
 # Plot the relative abundance vs abundance rank graph
 plots = plt.plot(range(1, len(species)+1), p, "o-", label=[f"{species[i]} ({counts[i]})" for i in range(len(species))])
