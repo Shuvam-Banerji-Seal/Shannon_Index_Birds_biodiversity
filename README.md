@@ -18,9 +18,6 @@ This repository contains two Python scripts for analyzing biodiversity based on 
    - Annotate each data point with the species name.
    - Add the Shannon index to the graph.
 
-### Result
-![Abundance Rank Graph](abundance_rank_graph.png)
-
 ## Biodiversity Analysis
 
 ### Algorithm Overview
@@ -39,8 +36,6 @@ This repository contains two Python scripts for analyzing biodiversity based on 
 4. **Create TXT File with Additional Data:**
    - Create a text file ("birds_biodiversity.txt") with species, abundance, ni/N, and ln(ni/N) columns.
 
-### Result
-![Relative Abundance vs Abundance Rank Graph](relative_abundance_graph.png)
 
 ## Conclusion
 
